@@ -11,11 +11,12 @@
   "dependencies": {
     "@heroicons/react": "^2.1.4",
     "framer-motion": "^11.2.12",
-    "next": "14.2.3",
+    "next": "^14.2.3",
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.3",
+    "sharp": "^0.33.5",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

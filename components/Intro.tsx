@@ -33,8 +33,8 @@ const IntroText: React.FC = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Front end development.", "backend development ", 'Mobile development','data science', 'cybersecurity'],
-      typeSpeed: 100,
+      strings: ["Front end development.", "Back end development ", 'Mobile development','Data science', 'Cybersecurity', 'Machine Learning'],
+      typeSpeed: 50,
       loop: true,
       showCursor: false,
       backDelay: 10,
@@ -51,7 +51,7 @@ const IntroText: React.FC = () => {
       <div className="flex flex-col  justify-center h-full  ">
         <h1 className="text-5xl font-semibold mb-10">
           Hello, I&apos;m <br />
-          sewase Angel
+          Nyumbayire Laurent
         </h1>
         <p className="text-stone-500 leading-5 w-[90%] mb-5 ">
           I&apos;m a full stack developer based in Rwanda, I strive to build

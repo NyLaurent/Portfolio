@@ -22,10 +22,10 @@ function Header() {
         ref={ref}
       >
         <div className="flex gap-2  items-center  ">
-          <button className="bg-purple-400 text-2xl text-white rounded-full px-3 text-center py-1 flex items-center justify-center  ">
-            A
+          <button className="bg-blue-500 text-2xl text-white rounded-full px-3 text-center py-1 flex items-center justify-center  ">
+            L
           </button>
-          <h1 className="text-2xl font-semibold ">Angel</h1>
+          <h1 className="text-2xl font-semibold ">Laurent</h1>
         </div>
         <Navigation />
         <ResponsiveNav setState={setShowModal} state={showmodal} />
@@ -86,7 +86,7 @@ function Component() {
         projects
       </a>
       <a href="#services" className="text-sm font-semibold font-sans">
-        services
+        Services
       </a>
       <a href="#contacts" className="text-sm font-semibold font-sans">
         contacts
