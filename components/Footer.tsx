@@ -7,7 +7,7 @@ function Footer() {
         <button className="bg-purple-400 text-2xl text-gray-200 rounded-full px-3 text-center py-1 flex items-center justify-center  ">
           A
         </button>
-        <h1 className="text-2xl font-semibold ">Angel</h1>
+        <h1 className="text-2xl font-semibold ">Laurent</h1>
         <div className="  w-[50%] h-full flex   items-center md:justify-between flex-1  justify-center">
           <div className="flex-1 md:flex  gap-10 items-center justify-center hidden">
             <a href="" className="text-sm font-semibold font-sans">
@@ -27,7 +27,7 @@ function Footer() {
             </a>
           </div>
          <div>
-         Copyright © 2024 Angel.
+         Copyright © 2024 Laurent.
         </div> 
         </div>
       </div>

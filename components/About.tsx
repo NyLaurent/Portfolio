@@ -23,7 +23,7 @@ function About() {
               <h1 className="text-3xl font-bold ">I&apos;m a software developer </h1>
             <div className="mt-10">
               <p className="mt-5 text-stone-600 leading-5">
-                Hi! I&apos;m Sewase Angel, a software developer with a passion for
+                Hi! I&apos;m Nyumbayire Laurent, a software developer with a passion for
                 turning ideas into code. Creativity, attention to detail, and a
                 love for learning fuel my work.
               </p>
@@ -73,10 +73,10 @@ const Contact:React.FC<{img:string,to:string}>=({img,to})=>{
 export const ContactComponent:React.FC=()=>{
      return  <>
          <div className="absolute md:bottom-10 md:right-4 lg:left-24 md:flex gap-2 px-4 py-2  w-[200px] shadow-2xl shadow-gray-200 bg-white hidden md">
-             <Contact img="/assets/instagram.svg" to="https://www.instagram.com/direct/new/?username=s_angel.11"/>
-             <Contact img="/assets/linkedin.svg" to="https://www.linkedin.com/in/sewase-angel-416346299/"/>
-             <Contact img="/assets/github.svg" to="https://github.com/Angelosewase"/>
-             <Contact img="/assets/twitter-alt.svg" to="https://x.com/angel_sewase"/>
+             <Contact img="/assets/instagram.svg" to="https://www.instagram.com/direct/new/?username=s_Laurent.11"/>
+             <Contact img="/assets/linkedin.svg" to="https://www.linkedin.com/in/Nyumbayire-Laurent-416346299/"/>
+             <Contact img="/assets/github.svg" to="https://github.com/LaurentoNyumbayire"/>
+             <Contact img="/assets/twitter-alt.svg" to="https://x.com/Laurent_Nyumbayire"/>
          </div>
      </>
 }

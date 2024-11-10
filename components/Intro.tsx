@@ -56,7 +56,7 @@ const IntroText: React.FC = () => {
         <p className="text-stone-500 leading-5 w-[90%] mb-5 ">
           I&apos;m a full stack developer based in Rwanda, I strive to build
           immersive and beautiful applications through carefully crafted code
-          and user-centirc design
+          and user-centric design
         </p>
 
         <div className="flex gap-2 items-center ">

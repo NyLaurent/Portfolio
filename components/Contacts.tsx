@@ -104,7 +104,7 @@ const contactsData: Array<contact> = [
   },
   {
     name: "My email",
-    details: "sewasejo8@gmail.com",
+    details: "Nyumbayirejo8@gmail.com",
     id: 2,
     Icon: EnvelopeOpenIcon,
   },
