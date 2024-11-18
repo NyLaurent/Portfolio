@@ -104,13 +104,13 @@ const contactsData: Array<contact> = [
   },
   {
     name: "My email",
-    details: "Nyumbayirejo8@gmail.com",
+    details: "laulanyumbayire@gmail.com",
     id: 2,
     Icon: EnvelopeOpenIcon,
   },
   {
     name: "Call me now",
-    details: "+250 725 541 525",
+    details: "+250 794971311",
     id: 3,
     Icon: PhoneIcon,
   },

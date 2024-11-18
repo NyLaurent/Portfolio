@@ -15,7 +15,7 @@ function Projects() {
         ))}
       </div>
       <a
-        href="https://github.com/LaurentoNyumbayire"
+        href="https://github.com/NyLaurent"
         className="border border-purple-500  mt-5 mb-3  px-4 py-0.5 text-purple-700 flex   items-center gap-2  hover:bg-purple-500 hover:text-white transition-all  rounded hover:scale-110 "
       >
         check out more on github
@@ -63,21 +63,21 @@ const Project: React.FC<project> = ({
         <div className="flex-1 w-full flex flex-col px-3 ">
           <h1 className="text-lg font-bold mb-1">{name}</h1>
           <div className="flex gap-2 text-sm text-gray-500 ">
-            Tech Stark:
+            Tech Stack:
             {techstark.map((data, idx) => (
               <Tech text={data} key={idx} />
             ))}
           </div>
-          <p className="leading-4  mt-2 text-[13px] text-gray-500">
+          <p className="leading-4 pb-3  mt-2 text-[13px] text-gray-500">
             {description}
           </p>
 
           <a
             href={link}
             target="_blank"
-            className="border border-purple-500 w-[120px] mt-auto mb-3 px-2 py-0.5 text-purple-700 flex   items-center justify-between hover:bg-purple-500 hover:text-white transition-all duration-75"
+            className="border border-purple-500 pt-1 w-[120px] mt-auto mb-3 px-2 py-0.5 text-purple-700 flex   items-center justify-between hover:bg-purple-500 hover:text-white transition-all duration-75"
           >
-            check out <ArrowLongRightIcon color="" width={20} height={20} />
+            Check out <ArrowLongRightIcon color="" width={20} height={20} />
           </a>
         </div>
       </motion.div>
@@ -105,12 +105,12 @@ interface project {
 
 const projects: Array<project> = [
   {
-    imgurl: "/assets/projects/doct.png",
-    name: "Doct",
-    link: "https://github.com/LaurentoNyumbayire/Doct",
-    techstark: ["react", "tailwindcss", "typescript"],
+    imgurl: "/assets/projects/about.png",
+    name: "Diagnoss",
+    link: "https://github.com/Diagnoos/app-diagnoos",
+    techstark: ["React native", "Tailwindcss & Nativewind", "Expo & Firebase"],
     description:
-      "Doct web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
+      "Diagnoss mobile app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
   },
   {
     imgurl: "/assets/projects/gura.png",
