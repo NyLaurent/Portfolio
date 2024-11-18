@@ -63,21 +63,21 @@ const Project: React.FC<project> = ({
         <div className="flex-1 w-full flex flex-col px-3 ">
           <h1 className="text-lg font-bold mb-1">{name}</h1>
           <div className="flex gap-2 text-sm text-gray-500 ">
-            Tech Stack:
+            Tech Stark:
             {techstark.map((data, idx) => (
               <Tech text={data} key={idx} />
             ))}
           </div>
-          <p className="leading-4 pb-3  mt-2 text-[13px] text-gray-500">
+          <p className="leading-4  mt-2 text-[13px] text-gray-500">
             {description}
           </p>
 
           <a
             href={link}
             target="_blank"
-            className="border border-purple-500 pt-1 w-[120px] mt-auto mb-3 px-2 py-0.5 text-purple-700 flex   items-center justify-between hover:bg-purple-500 hover:text-white transition-all duration-75"
+            className="border border-purple-500 w-[120px] mt-auto mb-3 px-2 py-0.5 text-purple-700 flex   items-center justify-between hover:bg-purple-500 hover:text-white transition-all duration-75"
           >
-            Check out <ArrowLongRightIcon color="" width={20} height={20} />
+            check out <ArrowLongRightIcon color="" width={20} height={20} />
           </a>
         </div>
       </motion.div>
@@ -105,12 +105,12 @@ interface project {
 
 const projects: Array<project> = [
   {
-    imgurl: "/assets/projects/about.png",
-    name: "Diagnoss",
-    link: "https://github.com/Diagnoos/app-diagnoos",
-    techstark: ["React native", "Tailwindcss & Nativewind", "Expo & Firebase"],
+    imgurl: "/assets/projects/doct.png",
+    name: "Doct",
+    link: "https://github.com/NyLaurent/Doct",
+    techstark: ["react", "tailwindcss", "typescript"],
     description:
-      "Diagnoss mobile app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
+      "Doct web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
   },
   {
     imgurl: "/assets/projects/gura.png",
@@ -123,7 +123,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/rideShare.png",
     name: "Ride share",
-    link: "https://github.com/LaurentoNyumbayire/ride-share",
+    link: "https://github.com/NyLaurent/ride-share",
     techstark: ["react native", "tailwindcss", "typescript", "expo"],
     description:
       "A transport and delivery app facilitates efficient logistics management, enabling users to request and track deliveries, manage routes, and ensure timely transportation of goods or services.",
@@ -131,7 +131,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/deliveroo.png",
     name: "Delivoroo <clone>",
-    link: "https://github.com/LaurentoNyumbayire/deliveroo-clone",
+    link: "https://github.com/NyLaurent/deliveroo-clone",
     techstark: ["react native", "tailwindcss", "typescript", "expo"],
     description:
       "I created a Deliveroo clone as a learning project where I tackled various challenges, gained valuable experience, and honed my skills in building a comprehensive food delivery platform.",
@@ -139,7 +139,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/iLead.png",
     name: "I Lead",
-    link: "https://github.com/LaurentoNyumbayire/ilead",
+    link: "https://github.com/NyLaurent/ilead",
     techstark: ["react", "tailwindcss", "typescript"],
     description:
       " iLead management system .This web-based platform will  track student progress,  manage resources and day to day operation of i lead program in RCA",
@@ -147,7 +147,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/nextjsdashboard.png",
     name: "nextjs dashboard",
-    link: "https://github.com/LaurentoNyumbayire/nextjs-dashboard",
+    link: "https://github.com/NyLaurent/nextjs-dashboard",
     techstark: ["nextjs", "tailwindcss", "node js ", "typescript"],
     description:
       "A sales dashboard learning project visualizes sales data, showing key metrics and trends to help you practice monitoring progress and making data-driven decisions.",
