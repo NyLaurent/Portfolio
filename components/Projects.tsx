@@ -62,7 +62,7 @@ const Project: React.FC<project> = ({
         </div>
         <div className="flex-1 w-full flex flex-col px-3 ">
           <h1 className="text-lg font-bold mb-1">{name}</h1>
-          <div className="flex gap-2 text-sm text-gray-500 ">
+          <div className="flex gap-2 text-sm text-gray-500 flex-row">
             Tech Stark:
             {techstark.map((data, idx) => (
               <Tech text={data} key={idx} />
@@ -105,12 +105,12 @@ interface project {
 
 const projects: Array<project> = [
   {
-    imgurl: "/assets/projects/doct.png",
-    name: "Doct",
-    link: "https://github.com/NyLaurent/Doct",
-    techstark: ["react", "tailwindcss", "typescript"],
+    imgurl: "/assets/projects/about.png",
+    name: "Diagnoss",
+    link: "https://github.com/Diagnoos/app-diagnoos",
+    techstark: ["React native","Nativewind","Typescript","Expo"],
     description:
-      "Doct web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
+      "Diagnoss web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
   },
   {
     imgurl: "/assets/projects/gura.png",
