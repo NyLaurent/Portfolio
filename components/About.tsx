@@ -75,10 +75,10 @@ const Contact:React.FC<{img:string,to:string}>=({img,to})=>{
 export const ContactComponent:React.FC=()=>{
      return  <>
          <div className="absolute md:bottom-10 md:right-4 lg:left-24 md:flex gap-2 px-4 py-2  w-[200px] shadow-2xl shadow-gray-200 bg-white hidden md">
-             <Contact img="/assets/instagram.svg" to="https://www.instagram.com/direct/new/?username=s_Laurent.11"/>
-             <Contact img="/assets/linkedin.svg" to="https://www.linkedin.com/in/Nyumbayire-Laurent-416346299/"/>
-             <Contact img="/assets/github.svg" to="https://github.com/LaurentoNyumbayire"/>
-             <Contact img="/assets/twitter-alt.svg" to="https://x.com/Laurent_Nyumbayire"/>
+             <Contact img="/assets/instagram.svg" to="https://www.instagram.com/laulan_6/?hl=en"/>
+             <Contact img="/assets/linkedin.svg" to="https://www.linkedin.com/in/nyumbayire-laurent/"/>
+             <Contact img="/assets/github.svg" to="https://github.com/NyLaurent/"/>
+             <Contact img="/assets/twitter-alt.svg" to="https://x.com/Lau_lanez"/>
          </div>
      </>
 }
