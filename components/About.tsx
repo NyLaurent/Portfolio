@@ -16,8 +16,10 @@ function About() {
       className=" flex items-center justify-center relative h-[60vh]" id="about">
         <motion.div className=" h-[750px] md:h-[800px] lg:h-[100%]  shadow-2xl rounded-xl shadow-gray-200 bg-white   absolute top-[80px] border-black px-2 md:mx-10 lg:right-56 lg:left-56 flex p-4  flex-col lg:flex-row  " initial={initial}  whileInView={animate} transition={transition}>
           <div className=" w-full lg:w-5/12  p-3 flex items-center justify-center">
-          <Image src={'/assets/p12.png'}  height={100} width={500} alt=""  className="w-[90%] md:h-72"/>
-          <ContactComponent />
+            <div className="w-[85%] md:h-72 rounded-full overflow-hidden">
+                <img src="/assets/lanez.jpg" alt="Your Picture" className="w-[500px] h-[300px] object-cover" />
+            </div>
+            <ContactComponent />
           </div>
           <div className="flex-1 p-10 ">
               <h1 className="text-3xl font-bold ">I&apos;m a software developer </h1>
