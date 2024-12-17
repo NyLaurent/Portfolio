@@ -6,17 +6,17 @@ import Typed from "typed.js";
 function Intro() {
   return (
     <div className="bg-gradient-to-r from-white to-purple-50   px-2 md:px-10 lg:px-56 pt-4 mt-1 flex items-center justify-center md:h-[92vh]">
-      <div className="flex-1 flex  h-full flex-col-reverse lg:flex-row mt-[100px] lg:mt-0">
+      <div className="flex-1 flex  h-full flex-col-reverse lg:flex-row gap-9 justify-between mt-[100px] lg:mt-0">
         <div className="flex-1 h-full pl-8 ">
           <IntroText />
         </div>
         <div className=" flex-1 h-full mb-10 lg:mb-0 flex items-center">
           <Image
-            src={"/assets/p11.gif"}
+            src={"/assets/lanez.jpg"}
             height={700}
             width={600}
             alt="this is"
-            className=" rounded-xl mx-auto   h-[300px] w-[300px] md:h-auto md:w-auto"
+            className=" rounded-full mx-auto   h-[300px] w-[300px] md:h-auto md:w-auto"
             unoptimized
           />
         </div>

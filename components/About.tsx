@@ -53,7 +53,9 @@ export default About;
 const More:React.FC=()=>{
     return <>
       <div className="mt-10">
-        <button  className="px-5 py-1.5 text-white font-semibold bg-purple-500  rounded-lg hover:shadow-lg shadow-gray-200">Resume</button>
+        <a href="https://docs.google.com/document/d/1nRokXKy6zWlGdXigLdMGb_4tLL_idzMOVU0JCkNmHwk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" download>
+            <button className="px-5 py-1.5 text-white font-semibold bg-purple-500 rounded-lg hover:shadow-lg shadow-gray-200">Resume</button>
+        </a>
         <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg  animate-bounce hover:animate-none ">let&apos;s chat </button>
       </div>
     </>
