@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Lato} from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const lato= Lato({
+
+const montserrat = Montserrat({
   weight:['100','300','400','700','900'],
   subsets:['latin'],
   display:'swap'
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${lato.className}`}>
+    <html lang="en" className={`${montserrat.className}`}>
       <body>{children}</body>
     </html>
   );

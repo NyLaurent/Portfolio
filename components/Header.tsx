@@ -22,10 +22,10 @@ function Header() {
         ref={ref}
       >
         <div className="flex gap-2  items-center  ">
-          <button className="bg-blue-500 text-2xl text-white rounded-full px-3 text-center py-1 flex items-center justify-center  ">
-            L
+          <button className="p-1 flex items-center justify-center">
+            <img src="/assets/lanez.jpg" alt="Logo" className="w-10 h-10 rounded-full" />
           </button>
-          <h1 className="text-2xl font-semibold ">Laurent</h1>
+          {/* <h1 className="text-2xl font-semibold ">Laurent</h1> */}
         </div>
         <Navigation />
         <ResponsiveNav setState={setShowModal} state={showmodal} />
@@ -42,20 +42,20 @@ const Navigation: React.FC = () => {
     <>
       <div className=" hidden w-[50%] h-full  lg:flex items-center justify-between ">
         <div className="flex-1 flex  gap-10 items-center justify-center">
-          <a href="" className="text-sm font-semibold font-sans">
+          <a href="" className="text-sm font-medium ">
             Home
           </a>
-          <a href="#about" className="text-sm font-semibold font-sans">
-            About{" "}
+          <a href="#about" className="text-sm font-medium ">
+            About
           </a>
-          <a href="#projects" className="text-sm font-semibold font-sans">
-            projects
+          <a href="#projects" className="text-sm font-medium ">
+            Projects
           </a>
-          <a href="#services" className="text-sm font-semibold font-sans">
+          <a href="#services" className="text-sm font-medium ">
             Services
           </a>
         </div>
-        <button className="bg-purple-400 rounded px-4 py-2  mr-3  text-white">
+        <button className="bg-gradient-to-r from-purple-200 to-purple-500  rounded px-4 py-2  mr-3  text-white">
           <a href="#contacts">Contact</a>
         </button>
       </div>
@@ -76,20 +76,20 @@ function Component() {
       className="hidden fixed top-0  lg:flex items-center  shadow-md shadow-gray-200  gap-10  justify-center ml-[100px] lg:ml-[550px] px-8 py-3 rounded-full mt-2 z-50 bg-white"
     >
       {/* Your element content */}
-      <a href="" className="text-sm font-semibold font-sans">
+      <a href="" className="text-sm font-medium">
         Home
       </a>
-      <a href="#about" className="text-sm font-semibold font-sans">
+      <a href="#about" className="text-sm font-medium">
         About
       </a>
-      <a href="#projects" className="text-sm font-semibold font-sans">
-        projects
+      <a href="#projects" className="text-sm font-medium">
+        Projects
       </a>
-      <a href="#services" className="text-sm font-semibold font-sans">
+      <a href="#services" className="text-sm font-medium">
         Services
       </a>
-      <a href="#contacts" className="text-sm font-semibold font-sans">
-        contacts
+      <a href="#contacts" className="text-sm font-medium">
+        Contacts
       </a>
     </motion.div>
   );
@@ -115,8 +115,8 @@ const MobileNavigationModal: React.FC<{
           <NavComponent to="" label="Home" setState={setState} />
           <NavComponent to="#about" label="About " setState={setState} />
           <NavComponent to="#projects" label="Projects" setState={setState} />
-          <NavComponent to="#services" label="services" setState={setState} />
-          <NavComponent to="#contacts" label="contacts" setState={setState} />
+          <NavComponent to="#services" label="Services" setState={setState} />
+          <NavComponent to="#contacts" label="Contacts" setState={setState} />
         </div>
       </div>
     </>

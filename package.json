@@ -16,6 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.3",
+    "react-particles-js": "^3.6.0",
+    "react-tsparticles": "^2.12.2",
     "sharp": "^0.33.5",
     "typed.js": "^2.1.0"
   },
