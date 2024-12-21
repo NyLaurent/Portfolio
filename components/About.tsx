@@ -14,7 +14,7 @@ function About() {
       <div 
       
       className=" flex items-center justify-center relative h-[60vh]" id="about">
-        <motion.div className=" h-[750px] md:h-[800px] lg:h-[100%]  shadow-2xl rounded-xl shadow-gray-200 bg-white   absolute top-[80px] border-black px-2 md:mx-10 lg:right-56 lg:left-56 flex p-4  flex-col lg:flex-row  " initial={initial}  whileInView={animate} transition={transition}>
+        <motion.div className=" h-[820px] md:h-[800px] lg:h-[100%]  shadow-2xl rounded-xl shadow-gray-200 bg-white   absolute top-[80px] border-black px-2 md:mx-10 lg:right-56 lg:left-56 flex p-4  flex-col lg:flex-row  " initial={initial}  whileInView={animate} transition={transition}>
           <div className=" w-full lg:w-5/12  p-3 flex items-center justify-center">
             <div className="w-[85%] md:h-72 rounded-full overflow-hidden">
                 <img src="/assets/lanez.jpg" alt="Your Picture" className="w-[500px] h-[300px] object-cover" />
@@ -35,8 +35,9 @@ function About() {
                 developer who brings a positive attitude and a creative spark to
                 the table!
               </p>
+              <More />
             </div>
-            <More />
+           
           </div>
 
         </motion.div>
@@ -52,11 +53,11 @@ export default About;
 
 const More:React.FC=()=>{
     return <>
-      <div className="mt-10">
+      <div className="mt-8">
         <a href="https://docs.google.com/document/d/1nRokXKy6zWlGdXigLdMGb_4tLL_idzMOVU0JCkNmHwk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" download>
             <button className="px-5 py-1.5 text-white font-semibold bg-purple-500 rounded-lg hover:shadow-lg shadow-gray-200">Resume</button>
         </a>
-        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg  animate-bounce hover:animate-none ">let&apos;s chat </button>
+        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg  animate-bounce hover:animate-none ">Let&apos;s chat </button>
       </div>
     </>
 }

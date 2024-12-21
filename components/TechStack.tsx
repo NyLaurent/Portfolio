@@ -8,7 +8,7 @@ function TechStack() {
   const data= techStackdata.find((data)=>data.id === type)
 
   return (
-    <div className=" md:h-[60vh] w-full bg-gradient-to-r from-white to-gray-200  px-2 md:px-10 lg:px-56 pt-[120px] flex  flex-col items-center mt-[250px] lg:mt-0">
+    <div className=" md:h-[60vh] w-full bg-gradient-to-r from-white to-gray-200  px-2 md:px-10 lg:px-56 pt-[120px] flex  flex-col items-center mt-[380px] lg:mt-0">
       <h1 className="text-4xl font-bold ">Tech Stack </h1>
       <NavigationComponent setState={setType} state={type} />
       <div className="flex gap-8 flex-wrap">
