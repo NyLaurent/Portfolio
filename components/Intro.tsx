@@ -17,7 +17,7 @@ function Intro() {
             height={700}
             width={600}
             alt="this is"
-            className=" rounded-full mx-auto   h-[600px] w-[300px] md:h-auto md:w-auto"
+            className="rounded-full mx-auto h-auto max-w-full"
             unoptimized
           />
         </div>
