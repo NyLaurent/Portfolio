@@ -6,7 +6,7 @@ import Typed from "typed.js";
 
 function Intro() {
   return (
-    <div className="bg-gradient-to-r from-white to-purple-200   px-2 md:px-10 lg:px-56 pt-4 mt-1 flex items-center justify-center md:h-[92vh]">
+    <div className="bg-gradient-to-r from-white to-purple-300   px-2 md:px-10 lg:px-56 pt-4 mt-1 flex items-center justify-center md:h-[92vh]">
       <div className="flex-1 flex  h-full flex-col-reverse lg:flex-row gap-9 justify-between mt-[100px] lg:mt-0">
         <div className="flex-1 h-full pl-8 ">
           <IntroText />

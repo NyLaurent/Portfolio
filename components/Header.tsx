@@ -18,7 +18,7 @@ function Header() {
   return (
     <>
       <div
-        className="w-full  flex  justify-between  items-center   px-5 md:px-4 lg:px-52 pt-3  fixed z-50 lg:relative top-0 "
+        className="w-full bg-white flex  justify-between  items-center   px-5 md:px-4 lg:px-52 pt-3  fixed z-50 lg:relative top-0 "
         ref={ref}
       >
         <div className="flex gap-2  items-center  ">
