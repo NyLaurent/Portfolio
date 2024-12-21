@@ -105,9 +105,14 @@ const frontEnd: Array<tech> = [
     imgUrl: "/assets/tech/vue.webp",
   },
   {
-    name: "Nuxt  ",
-    imgUrl: "/assets/tech/vue.webp",
+    name: "Nuxt.js",
+    imgUrl: "/assets/tech/nuxt.png",
   },
+  {
+    name: "Svelte",
+    imgUrl: "/assets/tech/sv.png",
+  },
+  
   
 ];
 
@@ -125,6 +130,10 @@ const Backend:Array<tech>=[{
 const mobile:Array<tech>=[{
   name:"React Native",
   imgUrl: "/assets/tech/reactNative.webp"
+},
+{
+  name:"Flutter",
+  imgUrl: "/assets/tech/flutter.png"
 }]
 const others:Array<tech>=[{
   name:"C++",
@@ -133,8 +142,12 @@ const others:Array<tech>=[{
   name:"C",
   imgUrl: "/assets/tech/c.webp"
 },{
-  name:"python",
+  name:"Python",
   imgUrl: "/assets/tech/python.webp"
+},
+{
+  name:"Java",
+  imgUrl: "/assets/tech/java.png"
 },
 ]
 
