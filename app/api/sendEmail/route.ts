@@ -8,12 +8,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, message: 'Missing required fields' }, { status: 400 });
   }
 
-  console.log('GMAIL_USER:', process.env.GMAIL_USER);
-  console.log('GMAIL_PASS:', process.env.GMAIL_PASS);
-
   // Create a transporter object using SMTP transport
   let transporter = nodemailer.createTransport({
-    service:"Gmail",
+    service: "Gmail",
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS, // Use an App Password if 2FA is enabled
@@ -22,7 +19,7 @@ export async function POST(req: NextRequest) {
 
   const mailOptions = {
     from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_USER,
+    to: "laulanyumbayire@gmail.com", // Send email to this address
     subject: `Portfolio Contact Form: ${subject}`,
     text: `From: ${email}\n\n${message}\n\nName: ${name}\nLocation: ${location}`,
   };

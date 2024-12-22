@@ -27,10 +27,10 @@ function Projects() {
       </div>
       <a
         href="https://github.com/NyLaurent"
-        className="mt-5 mb-3 px-4 py-0.5 text-black flex items-center gap-2 rounded"
+        className="mt-5 mb-3 px-6 py-2 text-white bg-purple-600 rounded-lg flex items-center gap-2 transition-transform transform hover:scale-105 hover:bg-purple-700"
       >
-        check out more on github
-        <ArrowLongRightIcon color="black" width={20} height={20} />
+        Check out more on github
+        <ArrowLongRightIcon color="white" width={20} height={20} />
       </a>
     </div>
   );

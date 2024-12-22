@@ -41,14 +41,14 @@ function ContactForm() {
       setStatus("Email sent successfully!");
     } else {
       console.log(data);
-      setStatus("Failed to send email.");
+      setStatus(data.message || "Failed to send email.");
     }
     setFormState({
-      name: null,
-      email: null,
-      location: null,
-      message: null,
-      subject: null,
+      name: "",
+      email: "",
+      location: "",
+      message: "",
+      subject: "",
     });
   }
 
