@@ -14,6 +14,7 @@ function ContactForm() {
 
   const [status, setStatus] = useState<null | string>(null);
   const [isDisabled, setIsDisabled] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
     if (
@@ -28,6 +29,7 @@ function ContactForm() {
   }, [formState]);
 
   async function handleformSubmission() {
+    setIsLoading(true);
     const response = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
@@ -39,6 +41,9 @@ function ContactForm() {
 
     if (data.success) {
       setStatus("Email sent successfully!");
+      setTimeout(() => {
+        setStatus(null);
+      }, 3000);
     } else {
       console.log(data);
       setStatus(data.message || "Failed to send email.");
@@ -50,6 +55,7 @@ function ContactForm() {
       message: "",
       subject: "",
     });
+    setIsLoading(false);
   }
 
   return (
@@ -101,9 +107,10 @@ function ContactForm() {
           !isDisabled && "hover:scale-110"
         } transition  ${ isDisabled && 'opacity-50'}`}
         onClick={handleformSubmission}
-        disabled={isDisabled}
+        disabled={isDisabled || isLoading}
       >
-        Submit
+        {isLoading ? "Sending..." : "Submit"}
+        {isLoading && <span className="loader" />}
         <PaperAirplaneIcon height={22} width={22} />
       </button>
       {status && <p className="text-sm text-purple-500">{status}</p>}
