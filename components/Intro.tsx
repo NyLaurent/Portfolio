@@ -56,8 +56,8 @@ const IntroText: React.FC = () => {
         <p className="text-stone-500 leading-5 w-[90%] mb-5 ">
         A Full Stack Developer from the heart of Rwanda.
          I get excited about building beautiful, functional web 
-         applications that make a difference. When I'm not crafting clean code,
-          I'm thinking about how to make technology more intuitive and enjoyable for everyone.
+         applications that make a difference. When I &apos;m not crafting clean code,
+          I &apos;m thinking about how to make technology more intuitive and enjoyable for everyone.
         </p>
 
         <div className="flex gap-2 items-center ">

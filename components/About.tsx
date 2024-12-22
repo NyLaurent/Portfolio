@@ -25,7 +25,7 @@ function About() {
               <h1 className="text-3xl font-bold ">I&apos;m a Software Engineer</h1>
             <div className="mt-10">
               <p className="mt-5 text-stone-600 leading-5">
-              Hi, I'm Laurent Nyumbayire. As a passionate software developer, I love turning ideas into innovative and meaningful solutions. I enjoy blending my technical skills with creative problem-solving to build applications that truly make a difference in people’s lives.
+              Hi, I &apos;m Laurent Nyumbayire. As a passionate software developer, I love turning ideas into innovative and meaningful solutions. I enjoy blending my technical skills with creative problem-solving to build applications that truly make a difference in people’s lives.
               </p>
               <p className=" text-stone-600 leading-5">
               I thrive in teamwork, bringing positivity and creativity to every project. Let’s connect!
