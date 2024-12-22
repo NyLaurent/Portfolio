@@ -64,7 +64,7 @@ const IntroText: React.FC = () => {
           <span ref={el} className="text-2xl font-semibold  text-blue-500" />
         </div>
 
-        <button className="px-4 py-2 text-white font-semibold animate-pulse hover:animate-none  bg-purple-500 w-[100px] rounded-lg  mt-4 hover:scale-110 transition delay-75  ">Say Hello </button>
+        <button className="px-4 py-2 text-white font-semibold animate-pulse hover:animate-none  bg-purple-500 w-[150px] rounded-lg  mt-4 hover:scale-110 transition delay-75  ">Say Hello </button>
       </div>
     </>
   );
