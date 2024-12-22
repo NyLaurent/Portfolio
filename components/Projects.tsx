@@ -12,7 +12,7 @@ function Projects() {
     if (type === "All") return true;
     if (type === "Web Development") return project.category === "Web";
     if (type === "Mobile") return project.category === "Mobile";
-    if (type === "Backend") return project.category === "Backend";
+    if (type === "Full Stack") return project.category === "Full Stack";
     return false;
   });
 
@@ -84,7 +84,7 @@ const Project: React.FC<project> = ({
             {description}
           </p>
         </div>
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
           <a
             href={link}
             target="_blank"
@@ -134,56 +134,57 @@ const projects: Array<project> = [
     // techstark: ["React native","Nativewind","Typescript","Expo"],
     description:
       "Diagnoss web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
-    category: "Web",
+    category: "Mobile",
   },
   {
-    imgurl: "/assets/projects/gura.png",
-    name: "Gura",
-    link: "https://gura-kappa.vercel.app",
-    hostedLink: "https://gura.com",
+    imgurl: "/assets/projects/haha.png",
+    name: "Haha",
+    link: "https://github.com/NyLaurent/Haha",
+    hostedLink: "https://haha-raomhnjup-nyumbayire-laurents-projects.vercel.app/",
     // techstark: ["react", "tailwindcss"],
     description:
       "Gura implements online buying and selling of products, featuring product listings, shopping cart, secure payments, and order management, enhancing convenience for users",
+    category: "Full Stack",
+  },
+  {
+    imgurl: "/assets/projects/image.png",
+    name: "Ezy-Chat",
+    link: "https://github.com/Ndahiroloicke/easy-chat",
+    hostedLink: "https://github.com/Ndahiroloicke/easy-chat",
+    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
+    description:
+      "ezy-chat is a React Native-based chat application that leverages Firebase Authentication for secure user login and signup, with Firestore as its database for storing user data. The app ensures robust form validations using Formik and Yup, providing users with a seamless and reliable communication experience",
+    category: "Mobile",
+  },
+   {
+    imgurl: "/assets/projects/vita.png",
+    name: "VitaFuel",
+    link: "https://github.com/NyLaurent/VitaFuel",
+    hostedLink: "https://vita-fuel-git-main-nyumbayire-laurents-projects.vercel.app/",
+    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
+    description:
+      "VitaFuel is a personalized nutrition coaching platform offering tailored meal plans, food tracking, and lifestyle support from certified experts. With flexible pricing plans, it provides accessible nutrition guidance to help users achieve optimal health and wellness.",
     category: "Web",
   },
-  {
-    imgurl: "/assets/projects/rideShare.png",
-    name: "Ride share",
-    link: "https://github.com/NyLaurent/ride-share",
-    hostedLink: "https://rideshare.com",
-    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
-    description:
-      "A transport and delivery app facilitates efficient logistics management, enabling users to request and track deliveries, manage routes, and ensure timely transportation of goods or services.",
-    category: "Mobile",
-  },
-  {
-    imgurl: "/assets/projects/deliveroo.png",
-    name: "Delivoroo <clone>",
-    hostedLink: "https://gura.com",
-    link: "https://github.com/NyLaurent/deliveroo-clone",
-    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
-    description:
-      "I created a Deliveroo clone as a learning project where I tackled various challenges, gained valuable experience, and honed my skills in building a comprehensive food delivery platform.",
-    category: "Mobile",
-  },
+  
   {
     imgurl: "/assets/projects/iLead.png",
     name: "I Lead",
     hostedLink: "https://gura.com",
-    link: "https://github.com/NyLaurent/ilead",
+    link: "https://github.com/NyLaurent/Ilead_website",
     // techstark: ["react", "tailwindcss", "typescript"],
     description:
       " iLead management system .This web-based platform will  track student progress,  manage resources and day to day operation of i lead program in RCA",
     category: "Web",
   },
   {
-    imgurl: "/assets/projects/nextjsdashboard.png",
-    name: "nextjs dashboard",
-    hostedLink: "https://gura.com",
-    link: "https://github.com/NyLaurent/nextjs-dashboard",
+    imgurl: "/assets/projects/psvf.png",
+    name: "PSSL Website",
+    hostedLink: "https://psvf.vercel.app/",
+    link: "https://github.com/NyLaurent/PSVF",
     // techstark: ["nextjs", "tailwindcss", "node js ", "typescript"],
     description:
-      "A sales dashboard learning project visualizes sales data, showing key metrics and trends to help you practice monitoring progress and making data-driven decisions.",
+      "A responsive and informative website dedicated to Petit Séminaire Saint Léon Kabgayi, highlighting its rich history, academic programs, core values, and extracurricular activities. The site serves as a hub for students, parents, and staff, providing updates on school events, resources, and essential contact information, while reflecting the school’s commitment to excellence in education and formation.",
     category: "Web",
   },
 ];
@@ -197,7 +198,7 @@ const NavigationComponent: React.FC<{ setState: Function; state: string }> = ({
       <Button setState={setState} state={state} text="All" />
       <Button setState={setState} state={state} text="Web Development" />
       <Button setState={setState} state={state} text="Mobile" />
-      <Button setState={setState} state={state} text="Backend" />
+      <Button setState={setState} state={state} text="Full Stack" />
     </div>
   );
 };
