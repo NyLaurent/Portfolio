@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: "my portfolio",
+  title: "Nyumbayire Laurent",
 };
 
 export default function RootLayout({
@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.className}`}>
+      <head>
+        <link rel="icon" href="../assets/l.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
