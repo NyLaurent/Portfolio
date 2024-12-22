@@ -50,13 +50,14 @@ const IntroText: React.FC = () => {
     <>
       <div className="flex flex-col  justify-center h-full  ">
         <h1 className="text-4xl font-semibold mb-8">
-          Hello, I&apos;m <br />
+        Hey there!, I&apos;m <br />
           Nyumbayire Laurent
         </h1>
         <p className="text-stone-500 leading-5 w-[90%] mb-5 ">
-          I&apos;m a full stack developer based in Rwanda, I strive to build
-          immersive and beautiful applications through carefully crafted code
-          and user-centric design
+        A Full Stack Developer from the heart of Rwanda.
+         I get excited about building beautiful, functional web 
+         applications that make a difference. When I'm not crafting clean code,
+          I'm thinking about how to make technology more intuitive and enjoyable for everyone.
         </p>
 
         <div className="flex gap-2 items-center ">

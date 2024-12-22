@@ -106,7 +106,7 @@ const servicesData: Array<service> = [
   {
     title: "Frontend development",
     description:
-      "I craft user-friendly interfaces (UI) that bring websites and apps to life.  My skills in HTML, CSS, and JavaScript ensure visually appealing and interactive experiences across all devices.",
+      "I specialize in designing intuitive user interfaces (UI) that bring websites and applications to life. My focus is on creating visually stunning, responsive, and interactive experiences that captivate users across all devices.",
     id: 1,
   },
   {
