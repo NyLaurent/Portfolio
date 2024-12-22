@@ -19,6 +19,9 @@ function Projects() {
   return (
     <div className="w-full bg-gray-50   md:px-2 lg:px-52  flex  flex-col items-center pt-20 pb-10" id="projects">
       <h1 className="text-4xl font-bold ">Projects </h1>
+      <p className="text-center text-gray-600 mt-2">
+        Here is a brief overview of my projects. You can explore more on my GitHub.
+      </p>
       <NavigationComponent setState={setType} state={type} />
       <div className="w-full py-3 flex justify-evenly   mt-10  flex-wrap j">
         {filteredProjects.map((data, idx) => (
@@ -170,7 +173,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/iLead.png",
     name: "I Lead",
-    hostedLink: "https://gura.com",
+    hostedLink: "https://github.com/NyLaurent/Ilead_website",
     link: "https://github.com/NyLaurent/Ilead_website",
     // techstark: ["react", "tailwindcss", "typescript"],
     description:
