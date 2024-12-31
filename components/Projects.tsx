@@ -165,8 +165,7 @@ const projects: Array<project> = [
     link: "https://github.com/NyLaurent/CarExhibit",
     hostedLink: "https://car-exhibit.vercel.app/",
     // techstark: ["react native", "tailwindcss", "typescript", "expo"],
-    description:
-      "VitaFuel is a personalized nutrition coaching platform offering tailored meal plans, food tracking, and lifestyle support from certified experts. With flexible pricing plans, it provides accessible nutrition guidance to help users achieve optimal health and wellness.",
+    description:"🚗 CarExhibit - A modern automotive platform using Next.js 14 and RapidAPI. Explore cars with real-time data, intelligent search, and fast loading. With server-side rendering and a sleek UI, elevate your car search experience! ✨",
     category: "Web",
   },
   
