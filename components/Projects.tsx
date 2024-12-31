@@ -160,10 +160,10 @@ const projects: Array<project> = [
     category: "Mobile",
   },
    {
-    imgurl: "/assets/projects/vita.png",
-    name: "VitaFuel",
-    link: "https://github.com/NyLaurent/VitaFuel",
-    hostedLink: "https://vita-fuel-git-main-nyumbayire-laurents-projects.vercel.app/",
+    imgurl: "/assets/projects/car.png",
+    name: "CarExhibit",
+    link: "https://github.com/NyLaurent/CarExhibit",
+    hostedLink: "https://car-exhibit.vercel.app/",
     // techstark: ["react native", "tailwindcss", "typescript", "expo"],
     description:
       "VitaFuel is a personalized nutrition coaching platform offering tailored meal plans, food tracking, and lifestyle support from certified experts. With flexible pricing plans, it provides accessible nutrition guidance to help users achieve optimal health and wellness.",
