@@ -182,7 +182,7 @@ const projects: Array<project> = [
   {
     imgurl: "/assets/projects/psvf.png",
     name: "PSSL Website",
-    hostedLink: "https://psvf.vercel.app/",
+    hostedLink: "https://pssl.vercel.app/",
     link: "https://github.com/NyLaurent/PSVF",
     // techstark: ["nextjs", "tailwindcss", "node js ", "typescript"],
     description:
