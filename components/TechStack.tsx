@@ -137,7 +137,7 @@ const mobile:Array<tech>=[{
 }]
 const others:Array<tech>=[{
   name:"C++",
-  imgUrl: "/assets/tech/C++.webp"
+  imgUrl: "/assets/tech/c2.webp"
 },{
   name:"C",
   imgUrl: "/assets/tech/c.webp"
