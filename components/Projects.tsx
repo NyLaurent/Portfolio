@@ -133,7 +133,7 @@ const projects: Array<project> = [
     imgurl: "/assets/projects/about.png",
     name: "Diagnoss",
     link: "https://github.com/Diagnoos/app-diagnoos",
-    hostedLink: "https://diagnoss.com",
+    hostedLink: "https://diagnoos.com/",
     // techstark: ["React native","Nativewind","Typescript","Expo"],
     description:
       "Diagnoss web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
