@@ -20,13 +20,15 @@ function Services() {
           a real difference in achieving the project goals. Let me know how we
           can move forward!
         </p>
-        <a
-          href=""
-          className="border border-purple-500  mt-6 mb-3  px-5 py-2 flex   items-center gap-2 bg-purple-500 text-white transition-all  rounded hover:scale-110  "
+        <button
+        
+          
+          className="border border-purple-500  mt-6 mb-3  px-5 py-2 flex   items-center gap-2 bg-purple-500 text-white transition-all  rounded hover:scale-110"
+          onClick={() => document.getElementById("target-component")?.scrollIntoView({ behavior: "smooth" })}
         >
           Let&apos;s work together
           <ArrowLongRightIcon color="" width={20} height={20} />
-        </a>
+        </button>
       </div>
       <WhatIDo />
     </>
@@ -51,12 +53,12 @@ const WhatIDo: React.FC = () => {
             for your phone or tablet. Basically, I make sure everything works
             smoothly together, no matter what device you use.
           </p>
-          <a
-            href=""
-            className="border border-purple-500  mt-10 mb-3  px-5 py-2 flex  w-[120px] items-center gap-2 bg-purple-500 text-white transition-all  rounded hover:scale-110  "
+          <button
+           onClick={() => document.getElementById("target-component")?.scrollIntoView({ behavior: "smooth" })}
+            className="border border-purple-500  mt-10 mb-3  px-6 py-2 flex  w-[120px] items-center gap-2 bg-purple-500 text-white transition-all  rounded hover:scale-110  "
           >
             Say hello!
-          </a>
+          </button>
         </div>
         <div className="flex-1  flex gap-6  flex-col">
           {servicesData.map((data,idx)=><WhatIDoComponent {...data} key={idx} state={state} setState={setState}/>)}

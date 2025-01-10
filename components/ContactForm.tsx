@@ -59,7 +59,7 @@ function ContactForm() {
   }
 
   return (
-    <div>
+    <div id="target-component">
       <p className="text-gray-500 text-sm mt-1 leading-4">
         I’m excited to hear from you! Fill out the form below and let’s start a
         conversation.
