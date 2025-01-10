@@ -90,7 +90,7 @@ interface tech {
 const frontEnd: Array<tech> = [
   {
     name: "React",
-    imgUrl: "/assets/tech/react.webp",
+    imgUrl: "/assets/tech/Atom.svg",
   },
   {
     name: "Angular",
@@ -98,11 +98,11 @@ const frontEnd: Array<tech> = [
   },
   {
     name: "Next js",
-    imgUrl: "/assets/tech/next.webp",
+    imgUrl: "/assets/tech/nextjs.svg",
   },
   {
     name: "Vue js ",
-    imgUrl: "/assets/tech/vue.webp",
+    imgUrl: "/assets/tech/vuejs.svg",
   },
   {
     name: "Nuxt.js",
@@ -118,7 +118,7 @@ const frontEnd: Array<tech> = [
 
 const Backend:Array<tech>=[{
   name:"node js",
-  imgUrl: "/assets/tech/nodejs.webp"
+  imgUrl: "/assets/tech/node.svg"
 },{
   name:"express js",
   imgUrl: "/assets/tech/express.webp"
@@ -143,7 +143,7 @@ const others:Array<tech>=[{
   imgUrl: "/assets/tech/c.webp"
 },{
   name:"Python",
-  imgUrl: "/assets/tech/python.webp"
+  imgUrl: "/assets/tech/Python.svg"
 },
 {
   name:"Java",
