@@ -94,7 +94,7 @@ const frontEnd: Array<tech> = [
   },
   {
     name: "Angular",
-    imgUrl: "/assets/tech/angular.webp",
+    imgUrl: "/assets/tech/angularjs.svg",
   },
   {
     name: "Next js",
@@ -106,34 +106,37 @@ const frontEnd: Array<tech> = [
   },
   {
     name: "Nuxt.js",
-    imgUrl: "/assets/tech/nuxt.png",
+    imgUrl: "/assets/tech/nuxtjs.svg",
   },
   {
     name: "Svelte",
-    imgUrl: "/assets/tech/sv.png",
+    imgUrl: "/assets/tech/svelte.svg",
   },
   
   
 ];
 
-const Backend:Array<tech>=[{
-  name:"node js",
+const Backend:Array<tech>=[
+  {
+  name:"Node js",
   imgUrl: "/assets/tech/node.svg"
-},{
+},
+
+{
   name:"express js",
   imgUrl: "/assets/tech/express.webp"
 },{
   name:"nest js",
-  imgUrl: "/assets/tech/nest.webp"
+  imgUrl: "/assets/tech/nestjs.svg"
 },]
 
 const mobile:Array<tech>=[{
   name:"React Native",
-  imgUrl: "/assets/tech/reactNative.webp"
+  imgUrl: "/assets/tech/Atom.svg"
 },
 {
   name:"Flutter",
-  imgUrl: "/assets/tech/flutter.png"
+  imgUrl: "/assets/tech/flutter.svg"
 }]
 const others:Array<tech>=[{
   name:"C++",
@@ -148,6 +151,10 @@ const others:Array<tech>=[{
 {
   name:"Java",
   imgUrl: "/assets/tech/java.png"
+},
+{
+  name:"Electron",
+  imgUrl: "/assets/tech/electron.svg"
 },
 ]
 
