@@ -83,14 +83,14 @@ const Project: React.FC<project> = ({
         <a
           href={link}
           target="_blank"
-          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md mr-2 bg-gray-800 hover:bg-gray-700 transition-colors"
+          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md mr-2 bg-purple-600  transition-colors"
         >
           <FaGithub size={20} />
         </a>
         <a
           href={hostedLink}
           target="_blank"
-          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md ml-2 bg-gray-800 hover:bg-gray-700 transition-colors"
+          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md ml-2 bg-purple-600  transition-colors"
         >
           <FaLink size={20} />
         </a>

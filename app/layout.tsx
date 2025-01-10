@@ -10,11 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Nyumbayire Laurent",
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+ 
   icons: {
     icon: '/favicon.ico', // Place your favicon in the public folder
   }
