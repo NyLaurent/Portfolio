@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
+import { FaGithub, FaLink } from "react-icons/fa"; // Import react-icons for GitHub and Link
 
 function Projects() {
   const [type, setType] = React.useState<string>("All");
@@ -17,13 +18,13 @@ function Projects() {
   });
 
   return (
-    <div className="w-full bg-gray-50   md:px-2 lg:px-52  flex  flex-col items-center pt-20 pb-10" id="projects">
+    <div className="w-full bg-gray-50 md:px-2 lg:px-52 flex flex-col items-center pt-20 pb-10" id="projects">
       <h1 className="text-4xl font-bold ">Projects </h1>
       <p className="text-center text-gray-600 mt-2">
         Here is a brief overview of my projects. You can explore more on my GitHub.
       </p>
       <NavigationComponent setState={setType} state={type} />
-      <div className="w-full py-3 flex justify-evenly   mt-10  flex-wrap j">
+      <div className="w-full py-3 flex justify-evenly mt-10 flex-wrap">
         {filteredProjects.map((data, idx) => (
           <Project {...data} key={idx} />
         ))}
@@ -46,75 +47,63 @@ const Project: React.FC<project> = ({
   imgurl,
   description,
   link,
-  
   hostedLink,
 }) => {
   const initial = { opacity: 0, y: 50 };
   const animate = { opacity: 1, y: 0 };
 
   return (
-    <>
-      <motion.div
-        className="flex flex-col h-[360px]  w-[340px] border border-gray-100 rounded bg-white mt-3 hover:scale-150 group relative"
-        initial={initial}
-        whileInView={animate}
-        // transition={transition}
-        whileHover={{
-          scale: 1.05,
-          boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
-          rotate: 2,
-        }}
-        transition={{ type: "spring", stiffness: 100, duration: 1 }}
-      >
-        <div className="flex-1 w-full overflow-hidden">
-          <Image
-            src={imgurl}
-            width={400}
-            height={100}
-            alt=""
-            className=" h-auto "
-          />
-        </div>
-        <div className="flex-1 w-full flex flex-col px-3 ">
-          <h1 className="text-lg font-bold mb-1">{name}</h1>
-          {/* <div className="flex gap-2 text-sm text-gray-500 flex-row">
-            Tech Stark:
-            {techstark.map((data, idx) => (
-              <Tech text={data} key={idx} />
-            ))}
-          </div> */}
-          <p className="leading-4  mt-2 text-[13px] text-gray-500">
-            {description}
-          </p>
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30  opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-          <a
-            href={link}
-            target="_blank"
-            className="flex items-center justify-center px-4 py-2 text-black rounded shadow-md mr-2"
-          >
-            <img src="/assets/github.svg" alt="GitHub" width={20} height={20} style={{color:'black'}} />
-          </a>
-          <a
-            href={hostedLink}
-            target="_blank"
-            className="flex items-center justify-center px-4 py-2 text-black rounded shadow-md ml-2"
-          >
-            <img src="/assets/link.svg" alt="Hosted" width={20} height={20} />
-          </a>
-        </div>
-      </motion.div>
-    </>
+    <motion.div
+      className="flex flex-col h-[360px] w-[340px] border border-gray-100 rounded bg-white mt-3 hover:scale-105 group relative"
+      initial={initial}
+      whileInView={animate}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+        rotate: 2,
+      }}
+      transition={{ type: "spring", stiffness: 100, duration: 1 }}
+    >
+      <div className="flex-1 w-full overflow-hidden">
+        <Image
+          src={imgurl}
+          width={400}
+          height={100}
+          alt=""
+          className="h-auto"
+        />
+      </div>
+      <div className="flex-1 w-full flex flex-col px-3">
+        <h1 className="text-lg font-bold mb-1">{name}</h1>
+        <p className="leading-4 mt-2 text-[13px] text-gray-500">
+          {description}
+        </p>
+      </div>
+      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+        <a
+          href={link}
+          target="_blank"
+          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md mr-2 bg-gray-800 hover:bg-gray-700 transition-colors"
+        >
+          <FaGithub size={20} />
+        </a>
+        <a
+          href={hostedLink}
+          target="_blank"
+          className="flex items-center justify-center px-4 py-2 text-white rounded shadow-md ml-2 bg-gray-800 hover:bg-gray-700 transition-colors"
+        >
+          <FaLink size={20} />
+        </a>
+      </div>
+    </motion.div>
   );
 };
 
 const Tech: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <>
-      <span className="text-xs   items-center flex justify-center  font-semibold ">
-        {text}
-      </span>
-    </>
+    <span className="text-xs items-center flex justify-center font-semibold">
+      {text}
+    </span>
   );
 };
 
@@ -123,7 +112,6 @@ interface project {
   name: string;
   link: string;
   hostedLink: string;
-  // techstark: Array<string>;
   description: string;
   category: string;
 }
@@ -134,7 +122,6 @@ const projects: Array<project> = [
     name: "Diagnoss",
     link: "https://github.com/Diagnoos/app-diagnoos",
     hostedLink: "https://diagnoos.com/",
-    // techstark: ["React native","Nativewind","Typescript","Expo"],
     description:
       "Diagnoss web app streamlines medical operations with features like appointment scheduling, patient records, billing, prescriptions, and communication, enhancing efficiency and care quality.",
     category: "Mobile",
@@ -144,7 +131,6 @@ const projects: Array<project> = [
     name: "Haha",
     link: "https://github.com/NyLaurent/Haha",
     hostedLink: "https://haha-raomhnjup-nyumbayire-laurents-projects.vercel.app/",
-    // techstark: ["react", "tailwindcss"],
     description:
       "Gura implements online buying and selling of products, featuring product listings, shopping cart, secure payments, and order management, enhancing convenience for users",
     category: "Full Stack",
@@ -154,29 +140,26 @@ const projects: Array<project> = [
     name: "Ezy-Chat",
     link: "https://github.com/Ndahiroloicke/easy-chat",
     hostedLink: "https://github.com/Ndahiroloicke/easy-chat",
-    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
     description:
       "ezy-chat is a React Native-based chat application that leverages Firebase Authentication for secure user login and signup, with Firestore as its database for storing user data. The app ensures robust form validations using Formik and Yup, providing users with a seamless and reliable communication experience",
     category: "Mobile",
   },
-   {
+  {
     imgurl: "/assets/projects/car.png",
     name: "CarExhibit",
     link: "https://github.com/NyLaurent/CarExhibit",
     hostedLink: "https://car-exhibit.vercel.app/",
-    // techstark: ["react native", "tailwindcss", "typescript", "expo"],
-    description:"🚗 CarExhibit - A modern automotive platform using Next.js 14 and RapidAPI. Explore cars with real-time data, intelligent search, and fast loading. With server-side rendering and a sleek UI, elevate your car search experience! ✨",
+    description:
+      "🚗 CarExhibit - A modern automotive platform using Next.js 14 and RapidAPI. Explore cars with real-time data, intelligent search, and fast loading. With server-side rendering and a sleek UI, elevate your car search experience! ✨",
     category: "Web",
   },
-  
   {
     imgurl: "/assets/projects/iLead.png",
     name: "I Lead",
     hostedLink: "https://github.com/NyLaurent/Ilead_website",
     link: "https://github.com/NyLaurent/Ilead_website",
-    // techstark: ["react", "tailwindcss", "typescript"],
     description:
-      " iLead management system .This web-based platform will  track student progress,  manage resources and day to day operation of i lead program in RCA",
+      "iLead management system .This web-based platform will track student progress, manage resources and day-to-day operation of iLead program in RCA",
     category: "Web",
   },
   {
@@ -184,7 +167,6 @@ const projects: Array<project> = [
     name: "PSSL Website",
     hostedLink: "https://pssl.vercel.app/",
     link: "https://github.com/NyLaurent/PSVF",
-    // techstark: ["nextjs", "tailwindcss", "node js ", "typescript"],
     description:
       "A responsive and informative website dedicated to Petit Séminaire Saint Léon Kabgayi, highlighting its rich history, academic programs, core values, and extracurricular activities. The site serves as a hub for students, parents, and staff, providing updates on school events, resources, and essential contact information, while reflecting the school’s commitment to excellence in education and formation.",
     category: "Web",
@@ -217,9 +199,11 @@ const Button: React.FC<{
   return (
     <button
       onClick={handleClick}
-      className={`py-1.5 px-2 md:px-4 ${
-        text === state ? "bg-purple-500 text-white font-semibold" : "bg-white"
-      } rounded transition-all`}
+      className={`${
+        state === text
+          ? "bg-[#7e22ce] text-white"
+          : "text-[#7e22ce] bg-white"
+      } hover:bg-[#7e22ce] hover:text-white py-1 px-3 rounded-md transition-colors`}
     >
       {text}
     </button>
