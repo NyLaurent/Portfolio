@@ -17,9 +17,11 @@ function About() {
         <motion.div className="h-auto shadow-2xl rounded-xl shadow-gray-200 bg-white absolute top-[80px] border-black px-4 md:px-8 lg:px-10 mx-4 md:mx-10 lg:right-56 lg:left-56 flex p-6 md:p-8 flex-col lg:flex-row gap-4" initial={initial} whileInView={animate} transition={transition}>
           <div className="w-full lg:w-5/12 p-6 flex flex-col items-center justify-center relative gap-6">
             <div className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
+              <Image 
                 src="/me/laurent3.jpg" 
                 alt="Laurent Nyumbayire" 
+                width={400}
+                height={533}
                 className="w-full h-full object-cover object-top" 
               />
             </div>
@@ -56,7 +58,7 @@ const More:React.FC=()=>{
         <a href="https://docs.google.com/document/d/1nRokXKy6zWlGdXigLdMGb_4tLL_idzMOVU0JCkNmHwk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" download>
             <button className="px-5 py-1.5 text-white font-semibold bg-purple-500 rounded-lg hover:shadow-lg shadow-gray-200">Resume</button>
         </a>
-        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg animate-bounce hover:animate-none">Let's chat </button>
+        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg animate-bounce hover:animate-none">Let&apos;s chat </button>
       </div>
     </>
 }
