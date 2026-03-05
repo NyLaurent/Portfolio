@@ -21,12 +21,12 @@ function Header() {
         className="w-full bg-white flex  justify-between  items-center   px-5 md:px-4 lg:px-52 pt-3  fixed z-50 lg:relative top-0 "
         ref={ref}
       >
-        <div className="flex gap-2  items-center  ">
+        {/* <div className="flex gap-2  items-center  ">
           <button className="p-1 flex items-center justify-center">
-            <img src="/assets/lanez.jpg" alt="Logo" className="w-10 h-10 rounded-full" />
+            <img src="/me/lanez3.jpg" alt="Logo" className="w-10 h-10 rounded-full" />
           </button>
-          {/* <h1 className="text-2xl font-semibold ">Laurent</h1> */}
-        </div>
+     
+        </div> */}
         <Navigation />
         <ResponsiveNav setState={setShowModal} state={showmodal} />
       </div>

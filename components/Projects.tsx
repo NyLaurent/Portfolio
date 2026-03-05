@@ -118,6 +118,22 @@ interface project {
 
 const projects: Array<project> = [
   {
+    imgurl: "/assets/projects/pickupbuddi.png",
+    name: "Pickup Buddi",
+    link: "https://github.com/NyLaurent/pickupbuddi",
+    hostedLink: "https://www.pickupbuddi.com/",
+    description: "A safe and reliable afterschool pickup service connecting parents with vetted Buddis. Features smart pickup coordination, live scheduling & alerts, verified background checks, and secure in-app payments. Simplifying modern parenting with trusted childcare solutions.",
+    category: "Mobile",
+  },
+  {
+    imgurl: "/assets/projects/africaupdates.png",
+    name: "Africa Updates",
+    link: "https://github.com/NyLaurent/africaupdates",
+    hostedLink: "https://www.africaupdates.com/",
+    description: "A comprehensive news platform delivering the latest updates, stories, and insights from across Africa. Stay informed with real-time news coverage, trending topics, and in-depth analysis on politics, business, culture, and more.",
+    category: "Web",
+  },
+  {
     imgurl: "/assets/projects/about.png",
     name: "Diagnoss",
     link: "https://github.com/Diagnoos/app-diagnoos",
