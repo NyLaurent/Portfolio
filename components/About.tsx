@@ -1,34 +1,38 @@
 'use client'
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 
 function About() {
-    const initial = { opacity: 0, y: 100 }; // Initial state: invisible and 50px above the viewport
-    const animate = { opacity: 1, y: 0 }; // Animation state: fully visible and at its original position
+    const initial = { opacity: 0, y: 100 };
+    const animate = { opacity: 1, y: 0 };
     const transition = { duration: 1.5 };
   return (
     <>
       <div 
       
-      className=" flex items-center justify-center relative h-[60vh]" id="about">
-        <motion.div className=" h-[820px] md:h-[800px] lg:h-[100%]  shadow-2xl rounded-xl shadow-gray-200 bg-white   absolute top-[80px] border-black px-2 md:mx-10 lg:right-56 lg:left-56 flex p-4  flex-col lg:flex-row  " initial={initial}  whileInView={animate} transition={transition}>
-          <div className=" w-full lg:w-5/12  p-3 flex items-center justify-center">
-            <div className="w-[85%] md:h-72 rounded-full overflow-hidden">
-                <img src="/assets/lanez.jpg" alt="Your Picture" className="w-[500px] h-[300px] object-cover" />
+      className=" flex items-center justify-center relative min-h-[80vh]" id="about">
+        <motion.div className="h-auto shadow-2xl rounded-xl shadow-gray-200 bg-white absolute top-[80px] border-black px-4 md:px-8 lg:px-10 mx-4 md:mx-10 lg:right-56 lg:left-56 flex p-6 md:p-8 flex-col lg:flex-row gap-4" initial={initial} whileInView={animate} transition={transition}>
+          <div className="w-full lg:w-5/12 p-6 flex flex-col items-center justify-center relative gap-6">
+            <div className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/me/laurent3.jpg" 
+                alt="Laurent Nyumbayire" 
+                className="w-full h-full object-cover object-top" 
+              />
             </div>
             <ContactComponent />
           </div>
-          <div className="flex-1 p-10 ">
-              <h1 className="text-3xl font-bold ">I&apos;m a Software Engineer</h1>
+          <div className="flex-1 p-10">
+              <h1 className="text-3xl font-bold">I&apos;m a Software Engineer</h1>
             <div className="mt-10">
               <p className="mt-5 text-stone-600 leading-5">
-              Hi, I &apos;m Laurent Nyumbayire. As a passionate software developer, I love turning ideas into innovative and meaningful solutions. I enjoy blending my technical skills with creative problem-solving to build applications that truly make a difference in people’s lives.
+              Hi, I &apos;m Laurent Nyumbayire. As a passionate software developer, I love turning ideas into innovative and meaningful solutions. I enjoy blending my technical skills with creative problem-solving to build applications that truly make a difference in people's lives.
               </p>
-              <p className=" text-stone-600 leading-5">
-              I thrive in teamwork, bringing positivity and creativity to every project. Let’s connect!
+              <p className="mt-3 text-stone-600 leading-5">
+              I thrive in teamwork, bringing positivity and creativity to every project. Let's connect!
               </p>
               <More />
             </div>
@@ -52,7 +56,7 @@ const More:React.FC=()=>{
         <a href="https://docs.google.com/document/d/1nRokXKy6zWlGdXigLdMGb_4tLL_idzMOVU0JCkNmHwk/edit?usp=sharing" target="_blank" rel="noopener noreferrer" download>
             <button className="px-5 py-1.5 text-white font-semibold bg-purple-500 rounded-lg hover:shadow-lg shadow-gray-200">Resume</button>
         </a>
-        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg  animate-bounce hover:animate-none ">Let&apos;s chat </button>
+        <button className="ml-2 px-6 py-1.5 hover:bg-sky-50 rounded-lg animate-bounce hover:animate-none">Let's chat </button>
       </div>
     </>
 }
@@ -61,8 +65,8 @@ const Contact:React.FC<{img:string,to:string}>=({img,to})=>{
   
    return <>
    <a href={to} target="_blank">
-        <button className={`p-2 rounded transition-all border border-purple-500 hover:scale-110 delay-75`} >
-            <Image src={img}  width={20} height={20} alt="" />
+        <button className={`p-2 rounded transition-all border border-purple-500 hover:scale-110 delay-75`}>
+            <Image src={img} width={20} height={20} alt="" />
         </button>
 
    </a>
@@ -72,7 +76,7 @@ const Contact:React.FC<{img:string,to:string}>=({img,to})=>{
 
 export const ContactComponent:React.FC=()=>{
      return  <>
-         <div className="absolute md:bottom-10 md:right-4 lg:left-24 md:flex gap-2 px-4 py-2  w-[200px] shadow-2xl shadow-gray-200 bg-white hidden md">
+         <div className="flex gap-2 px-4 py-2 shadow-2xl shadow-gray-200 bg-white rounded-lg justify-center">
              <Contact img="/assets/instagram.svg" to="https://www.instagram.com/laulan_6/?hl=en"/>
              <Contact img="/assets/linkedin.svg" to="https://www.linkedin.com/in/nyumbayire-laurent/"/>
              <Contact img="/assets/github.svg" to="https://github.com/NyLaurent/"/>
@@ -80,4 +84,3 @@ export const ContactComponent:React.FC=()=>{
          </div>
      </>
 }
-
